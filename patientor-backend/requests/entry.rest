@@ -1,0 +1,76 @@
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+  "type": "Hospital",
+  "date": "2020-01-01",
+  "description": "test visit",
+  "specialist": "Dr. No",
+  "discharge": {
+    "date": "2020-01-01",
+    "criteria": "patient is fine"
+  }
+}
+
+###
+
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+  "type": "HealthCheck",
+  "date": "2020-01-02",
+  "description": "test visit",
+  "specialist": "Dr. No",
+  "healthCheckRating": 1
+}
+
+###
+
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+  "type": "OccupationalHealthcare",
+  "date": "2020-01-03",
+  "description": "test visit",
+  "specialist": "Dr. No",
+  "employerName": "The Feds",
+  "sickLeave": {
+    "startDate": "2020-01-03",
+    "endDate": "2020-01-10"
+  }
+}
+
+###
+
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+  "type": "Hospital",
+  "date": "2020-01-01",
+  "description": "test visit",
+  "specialist": "Dr. No",
+  "discharge": {
+    "date": "2020-01-01",
+    "criteria": "patient is fine"
+  },
+  "diagnosisCodes": ["J10.1", "N30.0"]
+}
+
+### 
+
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+  "type": "HealthCheck",
+  "date": "2020-01-01",
+  "description": "test visit",
+  "specialist": "Dr. No",
+  "discharge": {
+    "date": "2020-01-01",
+    "criteria": "patient is fine"
+  }
+}
